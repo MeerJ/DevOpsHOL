@@ -1,6 +1,18 @@
 # Avanade DevOps HOL
 These are the hands on labs associated with the Avanade DevOps Practitioners course.  This is based to a large part on the [PartsUnlimitedHOL](https://microsoft.github.io/PartsUnlimited/basic/GettingStarted.html) but simplified to use the Visual Studio MVC sample application.  It does not use the PartsUnlimited HOL, but we want to acknowledge that project's contribution to this project.
 
+## Course Training Labs and Estimated Effort ##
+Below you will find the available training labs and the estimated time they will take to complete. The order in which they are presented, is the recommended order to run through them.
+| Lab       | Estimated Effort (minutes) |
+| --------- |:--------------------------:|
+| [Lab 1 - Create a CI/CD pipeline for .NET with the Azure DevOps Project](lab-1-azure-devops-project-pipeline.md) | 60 |
+| [Lab 2 - Add QA environment and define your multi-stage continuous deployment process with approvals and gates](lab-2-multi-stage-deployments.md) | 45 |
+| [Lab 3 - Analysis with SonarQube](lab-3-analysis-with-sonarqube.md) | 45 |
+| [Lab 4 - Feature Toggle](lab-4-feature-toggle.md) | 45 |
+| [Lab 5 - UI Testing](lab-5-ui-testing.md) | 90 |
+| [Lab 6 - Smoke Testing](lab-6-smoke-testing.md) | 45 |
+| [Lab 7 - Security Verification Tests in your CD pipeline](lab-7-security-verification-tests.md) | 45 |
+
 **NOTE: JULY 2018 - Microsoft is previewing a new look for VSTS so if you are using this new look, the instructions may be different and the screen shots will definitely be different.**
 
 **NOTE: SEPT 2018 - Microsoft has rebranded VSTS as Azure DevOps (the marketing team wanted to use the buzword).  Some of the materials in these labs still refer to VSTS and/or may have references to older UI.  This is the new reality of development.  What worked last week may not work today so it is important that you understand the principles behind the tools, not just the ability to blindly follow the steps.**
@@ -92,13 +104,3 @@ Remove-AzureRmResourceGroup -Name $ResourceGroupName
 
 
 Once you have a development environment set up, dive right in to the first [Getting Started](getting-started/README.md) lab.
-
-| Lab       | Estimated Effort (minutes) |
-| --------- |:--------------------------:|
-| [Lab 1 - Create a CI/CD pipeline for .NET with the Azure DevOps Project](lab-1-azure-devops-project-pipeline.md) | 60 |
-| [Lab 2 - Add QA environment and define your multi-stage continuous deployment process with approvals and gates](lab-2-multi-stage-deployments.md) | 45 |
-| [Lab 3 - Analysis with SonarQube](lab-3-analysis-with-sonarqube.md) | 45 |
-| [Lab 4 - Feature Toggle](lab-4-feature-toggle.md) | 45 |
-| [Lab 5 - UI Testing](lab-5-ui-testing.md) | 90 |
-| [Lab 6 - Smoke Testing](lab-6-smoke-testing.md) | 45 |
-| [Lab 7 - Security Verification Tests in your CD pipeline](lab-7-security-verification-tests.md) | 45 |
