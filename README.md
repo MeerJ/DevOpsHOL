@@ -3,6 +3,7 @@ These are the hands on labs associated with the Avanade DevOps Practitioners cou
 
 ## Course Training Labs and Estimated Effort ##
 Below you will find the available training labs and the estimated time they will take to complete. The order in which they are presented, is the recommended order to run through them.
+
 | Lab       | Estimated Effort (minutes) |
 | --------- |:--------------------------:|
 | [Lab 1 - Create a CI/CD pipeline for .NET with the Azure DevOps Project](lab-1-azure-devops-project-pipeline.md) | 60 |
