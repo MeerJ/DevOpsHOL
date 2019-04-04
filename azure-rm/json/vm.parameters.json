@@ -1,0 +1,36 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "newVMName": {
+            "value": "devopsvm"
+        },
+        "existingLabName": {
+            "value": "devopslab"
+        },
+        "newVMSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "userName": {
+            "value": "devopshol"
+        },
+        "password": {
+            "value": "ADP#2019"
+        },
+        "offer": {
+            "value": "VisualStudio"
+        },
+        "publisher": {
+            "value": "MicrosoftVisualStudio"
+        },
+        "sku": {
+            "value": "VS-2017-Comm-Latest-Win10-N"
+        },
+        "osType": {
+            "value": "Windows"
+        },
+        "version": {
+            "value": "latest"
+        }
+    }
+}
