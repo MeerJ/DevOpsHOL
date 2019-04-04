@@ -62,6 +62,20 @@
       "metadata": {
         "description": "The password for the local account that will be created on the new vm."
       }
+    },
+    "chocolatey_packages": {
+      "type": "string",
+      "metadata": {
+        "description": "The packages that will be installed by chocolatey on the new vm."
+      }
+    },
+    "chocolatey_allowEmptyChecksums": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "chocolatey_ignoreChecksums": {
+      "type": "bool",
+      "defaultValue": true
     }
   },
   "variables": {
@@ -87,15 +101,24 @@
         "labSubnetName": "[variables('labSubnetName')]",
         "artifacts": [
           {
-            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('existingLabName'), 'public repo', 'windows-chrome')]"
-          },
-          {
-            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('existingLabName'), 'public repo', 'windows-git')]"
-          },
-          {
-            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('existingLabName'), 'public repo', 'windows-vscode')]"
+            "artifactId": "[resourceId('Microsoft.DevTestLab/labs/artifactSources/artifacts', parameters('existingLabName'), 'public repo', 'windows-chocolatey')]",
+            "parameters": [
+              {
+                "name": "packages",
+                "value": "[parameters('chocolatey_packages')]"
+              },
+              {
+                "name": "allowEmptyChecksums",
+                "value": "[parameters('chocolatey_allowEmptyChecksums')]"
+              },
+              {
+                "name": "ignoreChecksums",
+                "value": "[parameters('chocolatey_ignoreChecksums')]"
+              }
+            ]
           }
         ],
+        "notes": "Visual Studio 2019 Community on Windows 10 Enterprise N (x64)",
         "galleryImageReference": {
           "Sku": "[parameters('sku')]",
           "OsType": "[parameters('osType')]",

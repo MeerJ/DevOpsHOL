@@ -18,10 +18,10 @@
       "value": 100
     },
     "allowedVmSizes": {
-      "value": "Standard_D1,Standard_D2,Standard_DS2,Standard_D2s_v3"
+      "value": "Standard_D1,Standard_D2,Standard_DS2,Standard_D2s_v3,Standard_A4_v2,Standard_F4s_v2,Standard_B8ms"
     },
     "vmSize": {
-      "value": "Standard_D2s_v3"
+      "value": "Standard_F4s_v2"
     },
     "vmStorageType": {
       "value": "Standard"

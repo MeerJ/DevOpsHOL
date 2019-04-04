@@ -9,7 +9,7 @@
             "value": "devopslab"
         },
         "newVMSize": {
-            "value": "Standard_D2s_v3"
+            "value": "Standard_B8ms"
         },
         "userName": {
             "value": "devopshol"
@@ -17,14 +17,17 @@
         "password": {
             "value": "ADP#2019"
         },
+        "chocolatey_packages": {
+            "value": "git,vscode,googlechrome"
+        },
         "offer": {
-            "value": "VisualStudio"
+            "value": "visualstudio2019"
         },
         "publisher": {
-            "value": "MicrosoftVisualStudio"
+            "value": "microsoftvisualstudio"
         },
         "sku": {
-            "value": "VS-2017-Comm-Latest-Win10-N"
+            "value": "vs-2019-comm-win10-n"
         },
         "osType": {
             "value": "Windows"
