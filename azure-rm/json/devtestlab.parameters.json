@@ -17,11 +17,8 @@
     "maxAllowedVmsPerLab": {
       "value": 100
     },
-    "allowedVmSizes": {
-      "value": "Standard_D1,Standard_D2,Standard_DS2,Standard_D2s_v3,Standard_A4_v2,Standard_F4s_v2,Standard_B8ms"
-    },
     "vmSize": {
-      "value": "Standard_F4s_v2"
+      "value": "Standard_B8ms"
     },
     "vmStorageType": {
       "value": "Standard"
@@ -30,7 +27,25 @@
       "value": "devopshol"
     },
     "vmPassword": {
-      "value": "ADP#2018"
+      "value": "ADP#2019"
+    },
+    "offer": {
+      "value": "visualstudio2019"
+    },
+    "publisher": {
+      "value": "microsoftvisualstudio"
+    },
+    "sku": {
+      "value": "vs-2019-comm-win10-n"
+    },
+    "osType": {
+      "value": "Windows"
+    },
+    "version": {
+      "value": "latest"
+    },
+    "chocolatey_packages": {
+      "value": "git,vscode,googlechrome"
     }
   }
 }

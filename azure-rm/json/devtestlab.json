@@ -41,14 +41,6 @@
         "description": "Set 'Total VMs allowed in Lab' policy: The maximum number of VMs allowed per lab."
       }
     },
-    "allowedVmSizes": {
-      "type": "string",
-      "defaultValue": "\"Standard_D1\"",
-      "minLength": 3,
-      "metadata": {
-        "description": "Set 'allowed VM sizes' policy: A comma-separated list of VM sizes that are allowed in the lab."
-      }
-    },
     "vmSize": {
       "type": "string",
       "defaultValue": "Standard_D1",
@@ -77,21 +69,40 @@
         "description": "The password for the local account that will be created on all the new VMs."
       }
     },
-    "vmOffer": {
+    "offer": {
       "type": "string",
-      "defaultValue": "WindowsServer"
+      "defaultValue": "visualstudio2019"
     },
-    "vmPublisher": {
+    "publisher": {
       "type": "string",
-      "defaultValue": "MicrosoftWindowsServer"
+      "defaultValue": "microsoftvisualstudio"
     },
-    "vmSku": {
+    "sku": {
       "type": "string",
-      "defaultvalue": "2016-Datacenter"
+      "defaultValue": "vs-2019-comm-win10-n"
     },
     "osType": {
       "type": "string",
       "defaultValue": "Windows"
+    },
+    "version": {
+      "type": "string",
+      "defaultValue": "latest"
+    },
+    "chocolatey_packages": {
+      "type": "string",
+      "defaultValue": "git,vscode,googlechrome",
+      "metadata": {
+        "description": "The packages that will be installed by chocolatey on the new vm."
+      }
+    },
+    "chocolatey_allowEmptyChecksums": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "chocolatey_ignoreChecksums": {
+      "type": "bool",
+      "defaultValue": true
     }
   },
   "variables": {
@@ -186,46 +197,30 @@
             "allowClaim": true,
             "storageType": "[parameters('vmStorageType')]",
             "galleryimagereference": {
-              "offer": "[parameters('vmOffer')]",
-              "publisher": "[parameters('vmPublisher')]",
-              "sku": "[parameters('vmSku')]",
-              "ostype": "[parameters('osType')]",
-              "version": "latest"
+              "Sku": "[parameters('sku')]",
+              "OsType": "[parameters('osType')]",
+              "Publisher": "[parameters('publisher')]",
+              "Offer": "[parameters('offer')]",
+              "Version": "[parameters('version')]"
             },
-            "networkInterface":{
+            "networkInterface": {
               "virtualNetworkId": "[variables('labVirtualNetworkId')]"
             },
             "artifacts": [
               {
-                "artifactId": "/artifactsources/public repo/artifacts/windows-chrome",
-                "parameters": []
-              },
-              {
-                "artifactId": "/artifactsources/public repo/artifacts/windows-azurepowershell",
-                "parameters": []
-              },
-              {
-                "artifactId": "/artifactsources/public repo/artifacts/windows-git",
-                "parameters": []
-              },
-              {
-                "artifactId": "/artifactsources/public repo/artifacts/windows-vscode",
-                "parameters": []
-              },
-              {
-                "artifactId": "/artifactsources/public repo/artifacts/windows-visualstudio",
+                "artifactid": "/artifactsources/public repo/artifacts/windows-chocolatey",
                 "parameters": [
                   {
-                    "name": "version",
-                    "value": "2017"
+                    "name": "packages",
+                    "value": "[parameters('chocolatey_packages')]"
                   },
                   {
-                    "name": "sku",
-                    "value": "Enterprise"
+                    "name": "allowEmptyChecksums",
+                    "value": "[parameters('chocolatey_allowEmptyChecksums')]"
                   },
                   {
-                    "name": "installerArgs",
-                    "value": ""
+                    "name": "ignoreChecksums",
+                    "value": "[parameters('chocolatey_ignoreChecksums')]"
                   }
                 ]
               }
