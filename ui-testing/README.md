@@ -249,7 +249,7 @@ Based on the following tutorials:
 
 1. Run all unit tests and make sure that all succeed
 
-## Tasks for UI Testing in the QA environment
+## Tasks for UI Testing in the Staging environment
 
 1. Add new file vsts.runsettings to the **Tests** project, with "Copy to Output directory" set to "Copy always". Notice the different value of the parameter. This is a token that will be replaced by an actual Url during the Release in VSTS.
     <details><summary>Click here to view the contents</summary>
@@ -296,5 +296,4 @@ Based on the following tutorials:
 2. Introduce a failing test and verify that the deployment stops with the failed test.
 
 ## Next steps
-
 Return to [the lab index](../README.md) and continue with the next lab.
