@@ -1,5 +1,4 @@
-Avanade DevOps HOL - Private Agent configuration with Azure DevOps
-====================================================================================
+# Avanade DevOps HOL - Private Agent configuration with Azure DevOps
 In this lab we configure a private agent for use in building the solution created in the [Continuous Integration](../continuous-integration/README.md) lab.
 For more information on using private agents for Azure DevOps builds, see the [Build and Release Agents](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents) documentation.
 

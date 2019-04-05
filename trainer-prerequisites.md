@@ -1,5 +1,4 @@
 # Avanade DevOps HOL - Trainer Prerequisites
-
 This document describes the steps trainers should take, in order to be prepared for the training.
 
 ## Prerequisites
@@ -14,3 +13,5 @@ This document describes the steps trainers should take, in order to be prepared 
 1. Have the participants complete the prerequisites lab.
 
 1. Set up pairs of participants, where at least one of them has programming/C# knowledge.
+
+1. Prepare the [Demos](demos/README.md) up front

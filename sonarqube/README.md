@@ -60,5 +60,4 @@ Based on [this](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube
 6. Set up own SonarQube server to use in this lab using Bitnami
 
 ## Next steps
-
-Continue with [Feature Flag](../feature-flag/README.md) lab.
+Return to [the lab index](../README.md) and continue with the next lab.

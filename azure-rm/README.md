@@ -52,3 +52,6 @@ To start setting up your environment, follow these steps:
 1. Then open a PowerShell console in the same folder and execute the file: .\ProvisionEnvironment.ps1
 
 1. Watch how the script will create your required resources in Azure. **The  process may take 20 minutes.**
+
+## Next steps
+Return to [the lab index](../README.md) and continue with the next lab.

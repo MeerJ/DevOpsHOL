@@ -1,5 +1,4 @@
-Avanade DevOps HOL - Continuous Integration with Visual Studio Team Services
-====================================================================================
+# Avanade DevOps HOL - Continuous Integration with Visual Studio Team Services
 In this lab, we use the application created in the Getting Started HOL to set up
 Visual Studio Team Services to be able continuously integrate code into the master
 branch of code. This means that whenever code is committed and pushed to the

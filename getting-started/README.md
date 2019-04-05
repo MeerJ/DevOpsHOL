@@ -1,6 +1,6 @@
-
 # Avanade DevOps HOL - Getting Started
 In this lab, we will be installing the required development components and verifying that the solution builds and is able to be pushed to Azure DevOps.
+
 ## Pre-requisites ##
 1. An active Azure subscription<br>
 	[Azure Portal](https://portal.azure.com)

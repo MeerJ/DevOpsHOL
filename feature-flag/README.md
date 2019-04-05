@@ -1,5 +1,4 @@
-Avanade DevOps HOL - Feature Flag for Web Application
-====================================================================================
+# Avanade DevOps HOL - Feature Flag for Web Application
 Feature flags provide the ability to turn features of your application on and off at a moments notice, no code deployments required. In this lab, we will add code to the project to demonstrate the use of feature flags to allow selectively turning on and off features to expose functionality. 
 
 In this lab, we add a Feature Toggle mechanism to our web application. The toggle will be enabled by json config and tested locally.
@@ -166,7 +165,4 @@ Based on [this](https://microsoft.github.io/PartsUnlimited/apm/200.6x-APM-Featur
 1. Push your code changes and let your pipeline do it's job
 
 ## Next steps
-
-Future labs will include A/B testing and telemetry labs.
-For Avanade folks taking the class, the next lab is setting up the [MEPFieldDemo](../mepfielddemo/README.md)
-
+Return to [the lab index](../README.md) and continue with the next lab.

@@ -297,4 +297,4 @@ Based on the following tutorials:
 
 ## Next steps
 
-Continue with [SonarQube](../sonarqube/README.md) lab.
+Return to [the lab index](../README.md) and continue with the next lab.

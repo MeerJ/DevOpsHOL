@@ -10,11 +10,11 @@ The order in which they are presented, is the recommended order to run through t
 
 | Lab       | Estimated Effort (minutes) |
 | --------- |:--------------------------:|
-| [Prerequisites - Set up your development environment with PowerShell and ARM](azure-rm/readme.md) | 30 |
-| [Lab 1 - Create a CI/CD pipeline for .NET with the Azure DevOps Project](azure-devops-project/readme.md) | 60 |
-| [Lab 2 - Add QA environment and define your multi-stage continuous deployment process with approvals and gates](multi-stage-deployments/readme.md) | 45 |
-| [Lab 3 - Analysis with SonarQube](sonarqube/readme.md) | 45 |
-| [Lab 4 - Feature Toggle](feature-flag/readme.md) | 45 |
-| [Lab 5 - UI Testing](ui-testing/readme.md) | 90 |
-| [Lab 6 - Smoke Testing](smoke-testing/readme.md) | 45 |
-| [[**Optional**] Lab 7 - Security Verification Tests in your CD pipeline](security-testing/readme.md) | 45 |
+| [Prerequisites - Set up your development environment with PowerShell and ARM](azure-rm/README.md) | 30 |
+| [Lab 1 - Create a CI/CD pipeline for .NET with the Azure DevOps Project](azure-devops-project/README.md) | 60 |
+| [Lab 2 - Add QA environment and define your multi-stage continuous deployment process with approvals and gates](multi-stage-deployments/README.md) | 45 |
+| [Lab 3 - Analysis with SonarQube](sonarqube/README.md) | 45 |
+| [Lab 4 - Feature Toggle](feature-flag/README.md) | 45 |
+| [Lab 5 - UI Testing](ui-testing/README.md) | 90 |
+| [Lab 6 - Smoke Testing](smoke-testing/README.md) | 45 |
+| [[**Optional**] Lab 7 - Security Verification Tests in your CD pipeline](security-testing/README.md) | 45 |
