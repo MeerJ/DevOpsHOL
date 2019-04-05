@@ -3,7 +3,7 @@ Feature flags provide the ability to turn features of your application on and of
 
 In this lab, we add a Feature Toggle mechanism to our web application. The toggle will be enabled by json config and tested locally.
 
-Based on [this](https://microsoft.github.io/PartsUnlimited/apm/200.6x-APM-FeatureFlagforWebapps.html) article and [this](https://github.com/jason-roberts/FeatureToggle/tree/master/src/Examples/AspDotNetCoreExample) example.
+Based on [this](https://microsoft.github.io/PartsUnlimited/advanced/FeatureFlagWeb.html) article and [this](https://github.com/jason-roberts/FeatureToggle/tree/master/src/Examples/AspDotNetCoreExample) example.
 
 ## Pre-requisites: ##
 - Complete [Getting Started](../getting-started/README.md) hands on lab.
