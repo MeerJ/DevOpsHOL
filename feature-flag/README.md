@@ -39,7 +39,7 @@ The instructions are based on the following documentation:
     }
     ```
 
-1. Create a new date showing feature which can be toggled with a feature toggle:
+1. Create a new time showing feature which can be toggled with a feature toggle:
     - In Index.cshtml:
         - add: \
          ```@addTagHelper *, Microsoft.FeatureManagement.AspNetCore```
@@ -99,8 +99,8 @@ The instructions are based on the following documentation:
     - Below spec\template\spec\containers\name add the following code:
     ```
     env:
-        - name: FeatureManagement__DateFeature
-          value: {{ .Values.DateFeature | quote }}
+        - name: FeatureManagement__TimeFeature
+          value: {{ .Values.TimeFeature | quote }}
 
         - name: FeatureManagement__NewPrivacyText
           value: {{ .Values.NewPrivacyText | quote }}
@@ -114,12 +114,12 @@ The instructions are based on the following documentation:
         Try to configure the following feature toggle configuration:
         |Name Feature|TST|PROD|
         |:-------------|:----|:----|
-        |DateFeature|false|true|
+        |TimeFeature|false|true|
         |NewPrivacyText|true|false|
 
     - You can add these values inside the ```Deploy Helm Chart``` task within the property ```overrideValues```. Here below you find to examples how can assign the values:
-        1. DateFeature="false"
-        1. DateFeature=$(testdatefeature), when you choose this option you should define the variable ```testdatefeature``` in your pipeline with the correct value.
+        1. TimeFeature="false"
+        1. TimeFeature=$(testtimefeature), when you choose this option you should define the variable ```testtimefeature``` in your pipeline with the correct value.
 
     Don't forget to save the file!
 
